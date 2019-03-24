@@ -18,11 +18,20 @@
 
 'use strict';
 
+var tjConfig = {
+    log: {
+        level: 'verbose'
+    },
+    speak: {
+    speakerDeviceId: "bluealsa:HCI=hci0,DEV=11:2C:33:A4:1E:5B,PROFILE=a2dp" //  add your bluetooth device mac address
+  }
+};
+
 const rl = require('readline-sync');
 
 const TJBot = require('tjbot');
 
-var tj = new TJBot(['speaker'], {log: {level: 'debug'}}, {});
+var tj = new TJBot(['speaker'], tjConfig, {});
 
 var sound = '/usr/share/sounds/alsa/Front_Center.wav';
 tj.play(sound).then(function() {
