@@ -2,7 +2,7 @@
 
 var soundplayer = require("sound-player")
 var options = {
-filename: "test.wav",
+filename: "sounds/test.wav",
 gain: 10,
 debug: true,
 player: 'aplay',
