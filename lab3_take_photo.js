@@ -27,7 +27,6 @@ var tj = new TJBot(
                     }
                     );
 
-tj.see(function(response) {  
-                            console.log(response.map(i => i.class).join(", "));
-                          }
-);
+tj.takePhoto(targetPath).then(function(filePath) {
+    ...
+});
