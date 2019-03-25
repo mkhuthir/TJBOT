@@ -9,12 +9,14 @@ This repository was created as part of my **“Building Robots with TJBot”** s
 
 ### Related github repositories and links:
 
-* https://www.research.ibm.com/tjbot/
+* **IBM Reasearch Page** >  https://www.research.ibm.com/tjbot/
 
-* https://ibmtjbot.github.io/
+* **Simulator Page** > https://my-tjbot.mybluemix.net/
 
-* https://github.com/ibmtjbot/tjbot
+* **Github.io** > Pagehttps://ibmtjbot.github.io/
 
-* https://my-tjbot.mybluemix.net/
+* **TJBOT Node.JS Lib** > https://github.com/ibmtjbot/tjbotlib
 
-* https://github.com/ibmtjbot/tjbotlib
+* **Github repo** > https://github.com/ibmtjbot/tjbot
+
+
