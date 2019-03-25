@@ -32,3 +32,11 @@ tj.identifyLanguage(text).then(function(languages) {
   });  
 });
 
+/*
+Other methods:
+
+identifyLanguage()
+translate(text, srcLanguage, targetLanguage)
+isTranslatable(srcLanguage, targetLanguage)
+
+*/
