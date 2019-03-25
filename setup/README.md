@@ -13,7 +13,7 @@ curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh -
 
 ## Manual Setup
 
-Change host name if you wish:
+####Change host name if you wish:
 
 ```bash
 hostname <enter your hostname here>
@@ -21,7 +21,8 @@ hostname <enter your hostname here>
 
 > The default hostname is `raspberrypi`.
 
-_Optional_ Disable ipv6. In some networking environments, disabling ipv6 may help your Pi get on the network.
+
+####_Optional_ Disable ipv6. In some networking environments, disabling ipv6 may help your Pi get on the network.
 
 ```
 echo " ipv6.disable=1" | sudo tee -a /boot/cmdline.txt
@@ -29,7 +30,7 @@ echo " ipv6.disable=1" | sudo tee -a /boot/cmdline.txt
 
 > It is safe to skip this step. We only recommend doing this step if necessary.
 
-5. _Optional_. Enable Quad9 DNS. In some networking environments, using Quad9's nameservers may speed up DNS queries and provide extra security and privacy..
+####_Optional_. Enable Quad9 DNS. In some networking environments, using Quad9's nameservers may speed up DNS queries and provide extra security and privacy..
 
 ```
 echo "nameserver 9.9.9.9" | sudo tee -a /etc/resolv.conf
@@ -38,7 +39,7 @@ echo "nameserver 149.112.112.112" | sudo tee -a /etc/resolv.conf
 
 > It is safe to skip this step. We only recommend doing this step if necessary.
 
-6. _Optional_. Set the locale to US English (en-US). You can use `raspi-config` to set the locale of your Raspberry Pi, but if you would like to force it to US English, you can run these commands.
+####_Optional_. Set the locale to US English (en-US). You can use `raspi-config` to set the locale of your Raspberry Pi, but if you would like to force it to US English, you can run these commands.
 
 ```
 export LC_ALL="en_US.UTF-8"
@@ -48,7 +49,7 @@ sudo locale-gen en_US.UTF-8
 
 > It is safe to skip this step. We only recommend doing this step if necessary.
 
-7. Update your Raspberry Pi's operating system software.
+####Update your Raspberry Pi's operating system software.
 
 ```
 sudo apt-get update
