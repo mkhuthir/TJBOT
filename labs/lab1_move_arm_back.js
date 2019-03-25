@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 /* Lab 1: Move the robot's arm - Move the arm back */
 
