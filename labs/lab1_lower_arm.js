@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* Lab 1: Move the robot's arm - Lower The Arm */
 
 var TJBot = require("tjbot");
