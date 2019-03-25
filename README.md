@@ -13,7 +13,7 @@ This repository was created as part of my **“Building Robots with TJBot”** s
 
 * **Simulator Page** > https://my-tjbot.mybluemix.net/
 
-* **Github.io** > Pagehttps://ibmtjbot.github.io/
+* **Github.io** > https://ibmtjbot.github.io/
 
 * **TJBOT Node.JS Lib** > https://github.com/ibmtjbot/tjbotlib
 
