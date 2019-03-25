@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* Lab 2: Shine and pulse the LED light - Pulse LED */
 
 var TJBot = require("tjbot");
