@@ -1,4 +1,5 @@
-    
+#!/usr/bin/env node    
+
 /* Lab 3: Make the robot see */
 
 var TJBot = require("tjbot");
