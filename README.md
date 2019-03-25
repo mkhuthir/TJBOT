@@ -10,3 +10,7 @@ This repository was created as part of my **“Building Robots with TJBot”** s
 ### Related github repositories and links:
 
 https://www.research.ibm.com/tjbot/
+https://ibmtjbot.github.io/
+https://github.com/ibmtjbot/tjbot
+https://my-tjbot.mybluemix.net/
+https://github.com/ibmtjbot/tjbotlib
