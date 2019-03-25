@@ -19,4 +19,4 @@ This repository was created as part of my **“Building Robots with TJBot”** s
 
 * **Github repo** > https://github.com/ibmtjbot/tjbot
 
-
+* **Course Page** > https://courses.cognitiveclass.ai/courses/course-v1:CognitiveClass+IT0101EN+v1/info
