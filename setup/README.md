@@ -1,40 +1,27 @@
-# TJBot Bootstrap
+# TJBot Setup
 
-Perform the following operations to prepare your Raspberry Pi for becoming a TJBot.
-
-## Automated Setup using the Bootstrap script
+## Automated Setup using IBM Bootstrap script
 
 **This is the preferred method for setting up your Raspberry Pi for TJBot.**
 
-1. Boot your Raspberry Pi and make sure it is connected to the network. There is an icon in the menu bar at the top of the screen for connecting to a wifi network.
-
-2. Open the Terminal (black square icon with the ">\_" at the top of the screen).
-
-3. Run the following command.
-
-```
+```bash
 curl -sL http://ibm.biz/tjbot-bootstrap | sudo sh -
 ```
 
 > Note that this script requires root access and must be run with `sudo`.
 
+
 ## Manual Setup
 
-**Use this method only if you have difficulties with the Bootstrap script, if you would like more control over the specific actions performed in setting up your Raspberry Pi, or if you are running an older version of Raspian (pre-Jessie).**
+Change host name if you wish:
 
-1. Boot your Raspberry Pi and make sure it is connected to the network. There is an icon in the menu bar at the top of the screen for connecting to a wifi network.
-
-2. Open the Terminal (black square icon with the ">\_" at the top of the screen).
-
-3. _Optional_. Set the hostname of your Raspberry Pi. The hostname is used to find your Raspberry Pi on the network.
-
-```
+```bash
 hostname <enter your hostname here>
 ```
 
 > The default hostname is `raspberrypi`.
 
-4. _Optional_. Disable ipv6. In some networking environments, disabling ipv6 may help your Pi get on the network.
+_Optional_ Disable ipv6. In some networking environments, disabling ipv6 may help your Pi get on the network.
 
 ```
 echo " ipv6.disable=1" | sudo tee -a /boot/cmdline.txt
@@ -137,7 +124,7 @@ In order for the LED to work, we need to disable certain kernel modules to avoid
 If you are interested in playing audio over USB, we recommend purchasing a [USB sound card](https://www.amazon.com/Virtual-Channel-Audio-Adapter-Notebook/dp/B00M3UWE3Q/)).
 
 ```
-sudo cp ~/Desktop/tjbot/bootstrap/tjbot-blacklist-snd.conf /etc/modprobe.d/
+sudo cp ~/Desktop/tjbot/setup/tjbot-blacklist-snd.conf /etc/modprobe.d/
 ```
 
 > This command assumes you have cloned the tjbot git repository to your Desktop. If you have cloned it to a different directory, be sure to update the path in the above command.
@@ -179,14 +166,14 @@ Hardware tests are included with bootstrap to ensure the TJBot hardware is set u
 Install the dependencies for the hardware tests.
 
 ```
-npm install ~/Desktop/tjbot/bootstrap/tests
+npm install ~/Desktop/tjbot/tests
 ```
 
 > This command assumes you have cloned the tjbot git repository to your Desktop. If you have cloned it to a different directory, be sure to update the path in the above command.
 
 ### Running all the tests
 
-Use the `runTests.sh` script to run all of the hardware tests.
+Use the `test.sh` script to run all of the hardware tests.
 
 ```
 cd ~/Desktop/tjbot/bootstrap
