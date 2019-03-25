@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* Lab 3: Make the robot see: take photo */
 
 var TJBot = require("tjbot");
