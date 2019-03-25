@@ -1,7 +1,11 @@
 #!/usr/bin/env node    
 
-/* Lab 5: Translate language */
+/* Lab 5: Translate language 
 
+TJBot can be trained to identify the language of text and translate text from one language to another by using the 
+Watson Language Translator service.
+
+*/
 
 var TJBot = require("tjbot");
 
