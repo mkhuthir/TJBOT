@@ -11,8 +11,17 @@ Wave the arm up and down
 
 */
 
-var TJBot = require("tjbot");
+
+const rl 	= require('readline-sync');
+const TJBot 	= require('tjbot');
 
 var tj = new TJBot(["servo"],{},{});
 
 tj.raiseArm();
+
+var answer = rl.question('Is TJBot\'s arm in the raised position? Y/N > ');
+    if (answer.toLowerCase() != 'y') {
+        throw new Error('please check servo wiring');
+    }
+
+
