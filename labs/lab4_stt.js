@@ -23,7 +23,7 @@ var tj = new TJBot(
   },
   {
     speech_to_text: {
-	"apikey": "89KdvLM8h5eywANtm-Ui-PmkdMai-axTIpc6qnZtP5aF"
+
     }
   });
 
