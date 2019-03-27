@@ -1,6 +1,6 @@
-#!/usr/bin/env node    
+#!/usr/bin/env node
 
-/* Lab 3: Make the robot see 
+/* Lab 3: Make the robot see
 
 TJBot can be trained to take photos and recognize objects and colors. The physical TJBot uses a Raspberry Pi camera.
 The flex cable inserts into the connector situated between the Ethernet and HDMI ports, with the silver connectors 
@@ -17,10 +17,10 @@ var tj = new TJBot(
                     {
                       see: {
                               confidenceThreshold: {
-                                object: 0.5,   // only list image tags with confidence > 0.5
+                                object: 0.1,   // only list image tags with confidence > 0.5
                                 text: 0.1     // only list text tags with confidence > 0.5
                               },
-                              
+
                               camera: {
                                 height: 720,
                                 width: 960,
@@ -29,15 +29,15 @@ var tj = new TJBot(
                               }
                       }
                     },
-                    
+
                     {
                       visual_recognition: {
-                          apikey: "xxx__paste__key__here__xxx"
+                          apikey: ""
                       }
                     }
                     );
 
-tj.see(function(response) {  
-                            console.log(response.map(i => i.class).join(", "));
+tj.see().then(function(objects) {
+                            console.log(objects.map(i => i.class).join(", "));
                           }
 );
