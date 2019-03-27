@@ -1,6 +1,6 @@
-#!/usr/bin/env node    
+#!/usr/bin/env node
 
-/* Lab 4: Convert speech to text 
+/* Lab 4: Convert speech to text
 
 TJBot can be trained to listen to natural phrases spoken into the microphone. Several types of microphones are available, 
 each with varying degrees of audio quality. In practice, some work much better in noisy environments. 
@@ -14,22 +14,21 @@ speaker device ID.
 
 var TJBot = require("tjbot");
 
-var tj = new TJBot(  
-  ["microphone"],  
+var tj = new TJBot(
+  ["microphone"],
   {
     listen: {
-      language: "en-US"    
+      language: "en-US"
     }
-  },  
-  { 
+  },
+  {
     speech_to_text: {
-      username: "",      
-      password: ""
+	"apikey": "89KdvLM8h5eywANtm-Ui-PmkdMai-axTIpc6qnZtP5aF"
     }
   });
 
-tj.listen(function(text) {  
-  console.log(text);  
+tj.listen(function(text) {
+  console.log(text);
   tj.stopListening();
 });
 
