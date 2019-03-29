@@ -11,14 +11,16 @@ Wave the arm up and down
 
 */
 
-const rl 	= require('readline-sync');
-const TJBot 	= require('tjbot');
+import { question } from 'readline-sync';
+import TJBot from 'tjbot';
 
 var tj = new TJBot(["servo"],{},{});
 
 tj.armBack();
 
-var answer = rl.question('Is TJBot\'s arm in the BACKWARD position? Y/N > ');
+// I have added the following code to ensure that servo is moved before exiting the script.
+// Without this code the script will exit before servo is moved.
+var answer = question('Is TJBot\'s arm in the BACKWARD position? Y/N > ');
     if (answer.toLowerCase() != 'y') {
         throw new Error('please check servo wiring');
     }

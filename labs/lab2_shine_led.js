@@ -6,7 +6,7 @@ TJBot has an LED that can be controlled to signal the user about various conditi
 
 */
 
-var TJBot = require("tjbot");
+import TJBot from "tjbot";
 
 var tj = new TJBot(["led"],{},{});
 
