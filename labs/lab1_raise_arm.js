@@ -12,8 +12,8 @@ Wave the arm up and down
 */
 
 
-import { question } from 'readline-sync';
-import TJBot from 'tjbot';
+const rl    = require('readline-sync');
+const TJBot = require('tjbot');
 
 var tj = new TJBot(["servo"],{},{});
 

@@ -18,8 +18,7 @@
 
 'use strict';
 
-const rl = require('readline-sync');
-
+const rl    = require('readline-sync');
 const TJBot = require('tjbot');
 
 var tj = new TJBot(['led'], {log: {level: 'debug'}}, {});
