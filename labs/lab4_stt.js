@@ -22,15 +22,10 @@ var credentials = config.credentials;
 var hardware = ['led', 'microphone'];
 
 // set up TJBot's configuration
-var tjConfig = {
-    log: {
-        level: 'verbose'
-    }
-};
+var tjConfig = = config.tjConfig;
 
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
-
 
 tj.listen(function(text) {
   console.log(text);
