@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Copyright 2016-2018 IBM Corp. All Rights Reserved.
  *
