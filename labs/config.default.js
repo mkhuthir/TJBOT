@@ -32,7 +32,7 @@ exports.credentials.assistant = {
     // IAM authentication -- fill in your API key below
     apikey: 'FILL IN YOUR API KEY HERE',
     // service URL -- change this if the URL is different in your authentication credentials
-    url: 'https://gateway.watsonplatform.net/assistant/api/'
+    url: 'url": "https://gateway-lon.watsonplatform.net/assistant/api'
 };
 
 //  --- Watson Speech to Text (STT) ---
@@ -58,7 +58,7 @@ exports.credentials.text_to_speech = {
     // IAM authentication -- fill in your API key below
     apikey: 'FILL IN YOUR API KEY HERE',
     // service URL -- change this if the URL is different in your authentication credentials
-    url: 'https://stream.watsonplatform.net/text-to-speech/api/'
+    url: 'https://gateway-lon.watsonplatform.net/text-to-speech/api'
 };
 
 //  --- Watson Visual Recognition ---
