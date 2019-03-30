@@ -11,6 +11,10 @@ This lab requires the Watson Visual Recognition service.
 */
 
 var TJBot = require("tjbot");
+var config = require('./config');
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
 
 var tj = new TJBot(
                     ["camera"],
@@ -29,12 +33,7 @@ var tj = new TJBot(
                               }
                       }
                     },
-
-                    {
-                      visual_recognition: {
-                          apikey: ""
-                      }
-                    }
+                    credentials
                     );
 
 tj.see().then(function(objects) {
