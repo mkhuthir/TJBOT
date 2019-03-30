@@ -1,5 +1,5 @@
-/*  --- Updated by Muthanna A. Attyah Alwahash --- 
-    --- April 2019 --- 
+/*  --- Updated by Muthanna A. Attyah Alwahash ---
+    --- April 2019 ---
 
 * User-specific configuration
 * IMPORTANT NOTES:
@@ -18,8 +18,8 @@ exports.tjConfig = {
     log: { level: 'verbose' },
     robot: { name: 'Hamza bot' } // Changing the robot name will change the attention word
 };
- 
-// ---  Create the credentials object for export  --- 
+
+// ---  Create the credentials object for export  ---
 exports.credentials = {};
 
 // --- Watson Assistant ---
@@ -72,4 +72,13 @@ exports.credentials.visual_recognition = {
     apikey: 'FILL IN YOUR API KEY HERE',
     // service URL -- change this if the URL is different in your authentication credentials
     url: 'https://gateway.watsonplatform.net/visual-recognition/api'
+};
+
+//  --- Watson Language Translator ---
+// https://www.ibm.com/watson/services/language-translator/
+exports.credentials.language_translator = {
+    // IAM authentication -- fill in your API key below
+    apikey: 'FILL IN YOUR API KEY HERE',
+    // service URL -- change this if the URL is different in your authentication credentials
+    url: 'https://gateway-lon.watsonplatform.net/language-translator/api'
 };
