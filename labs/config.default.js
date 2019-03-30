@@ -16,12 +16,12 @@ exports.hasCamera = true;
 // set up TJBot's configuration
 exports.tjConfig = {
     log: {
-        level: 'verbose'
+            level: 'verbose'
     },
     // Changing the robot name will change the attention word
-    // robot: {
-    //    name: 'tee jay bot'
-    // }
+    robot: {
+                name: 'Hamza bot'
+    }
 };
 
 // ------------------------------------------------------------------------------------------------------------ 
