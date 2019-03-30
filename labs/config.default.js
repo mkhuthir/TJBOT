@@ -1,5 +1,5 @@
-/*  -------------------------------- Updated by Muthanna A. Attyah Alwahash  -------------------------------- 
-    -------------------------------- April 2019                              -------------------------------- 
+/*  --- Updated by Muthanna A. Attyah Alwahash --- 
+    --- April 2019 --- 
 
 * User-specific configuration
 * IMPORTANT NOTES:
@@ -15,20 +15,14 @@ exports.hasCamera = true;
 
 // set up TJBot's configuration
 exports.tjConfig = {
-    log: {
-            level: 'verbose'
-    },
-    // Changing the robot name will change the attention word
-    robot: {
-                name: 'Hamza bot'
-    }
+    log: { level: 'verbose' },
+    robot: { name: 'Hamza bot' } // Changing the robot name will change the attention word
 };
-
-// ------------------------------------------------------------------------------------------------------------ 
-// --------------------------------  Create the credentials object for export  -------------------------------- 
+ 
+// ---  Create the credentials object for export  --- 
 exports.credentials = {};
 
-// -------------------------------- Watson Assistant ----------------------------------------------------------
+// --- Watson Assistant ---
 // https://www.ibm.com/watson/services/conversation/
 exports.credentials.assistant = {
     // username/password authentication -- if your service uses this method,
@@ -41,7 +35,7 @@ exports.credentials.assistant = {
     url: 'https://gateway.watsonplatform.net/assistant/api/'
 };
 
-//  -------------------------------- Watson Speech to Text (STT) ------------------------------------------------
+//  --- Watson Speech to Text (STT) ---
 // https://www.ibm.com/watson/services/speech-to-text/
 exports.credentials.speech_to_text = {
     // username/password authentication -- if your service uses this method,
@@ -54,7 +48,7 @@ exports.credentials.speech_to_text = {
     url: 'https://gateway-lon.watsonplatform.net/speech-to-text/api'
 };
 
-//  -------------------------------- Watson Text to Speech (TTS) -------------------------------------------------
+//  --- Watson Text to Speech (TTS) ---
 // https://www.ibm.com/watson/services/text-to-speech/
 exports.credentials.text_to_speech = {
     // username/password authentication -- if your service uses this method,
@@ -67,7 +61,7 @@ exports.credentials.text_to_speech = {
     url: 'https://stream.watsonplatform.net/text-to-speech/api/'
 };
 
-//  -------------------------------- Watson Visual Recognition -----------------------------------------------------
+//  --- Watson Visual Recognition ---
 // https://www.ibm.com/watson/services/visual-recognition/
 exports.credentials.visual_recognition = {
     // username/password authentication -- if your service uses this method,
