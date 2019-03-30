@@ -41,8 +41,8 @@ var tjColors = tj.shineColors(['red', 'green', 'blue']);
 console.log("I understand lots of colors.  You can tell me to shine my light a different color by saying 'turn the light red' or 'change the light to green' or 'turn the light off'.");
 
 // uncomment to see the full list of colors TJ understands
-// console.log("Here are all the colors I understand:");
-// console.log(tjColors.join(", "));
+console.log("Here are all the colors I understand:");
+console.log(tjColors.join(", "));
 
 // hash map to easily test if TJ understands a color, e.g. {'red': 1, 'green': 1, 'blue': 1}
 var colors = {'red': 1, 'green': 1, 'blue': 1};
