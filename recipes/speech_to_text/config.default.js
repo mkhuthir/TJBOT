@@ -19,5 +19,5 @@ exports.credentials.speech_to_text = {
     // IAM authentication -- fill in your API key below
     apikey: 'FILL IN YOUR API KEY HERE',
     // service URL -- change this if the URL is different in your authentication credentials
-    url: 'https://stream.watsonplatform.net/speech-to-text/api/'
+    url: 'https://gateway-lon.watsonplatform.net/speech-to-text/api'
 };
