@@ -26,7 +26,7 @@ var hardware = ['led', 'microphone'];
 // set up TJBot's configuration
 var tjConfig = {
     log: {
-        level: 'verbose'
+        level: 'debug'
     }
 };
 
@@ -34,7 +34,7 @@ var tjConfig = {
 var tj = new TJBot(hardware, tjConfig, credentials);
 
 // full list of colors that TJ recognizes, e.g. ['red', 'green', 'blue']
-var tjColors = tj.shineColors();
+var tjColors = tj.shineColors(['red', 'green', 'blue']);
 
 console.log("I understand lots of colors.  You can tell me to shine my light a different color by saying 'turn the light red' or 'change the light to green' or 'turn the light off'.");
 
@@ -43,7 +43,7 @@ console.log("I understand lots of colors.  You can tell me to shine my light a d
 // console.log(tjColors.join(", "));
 
 // hash map to easily test if TJ understands a color, e.g. {'red': 1, 'green': 1, 'blue': 1}
-var colors = {};
+var colors = {'red': 1, 'green': 1, 'blue': 1};
 tjColors.forEach(function(color) {
     colors[color] = 1;
 });
