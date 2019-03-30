@@ -12,9 +12,18 @@ This lab requires the Watson Visual Recognition service.
 
 const targetPath='./images/photo.jpg'
 
+// just need tjbot to think that it is capable of seeing, don't
+// actually need real Watson credentials for this test
+
+const dummyWatsonCredentials = {
+    visual_recognition: {
+        apikey: 'abc-def-ghi'
+    }
+};
+
 var TJBot = require("tjbot");
 
-var tj = new TJBot(["camera"],{},{});
+var tj = new TJBot(['camera'], {log: {level: 'debug'}}, dummyWatsonCredentials);
 
 tj.takePhoto(targetPath).then(function(filePath) {
 	console.log('Captured Photo Path ='+filePath);
