@@ -1,6 +1,6 @@
 /*  -------------------------------- Updated by Muthanna A. Attyah Alwahash  -------------------------------- 
-/*  -------------------------------- April 2019                              -------------------------------- 
-/*
+    -------------------------------- April 2019                              -------------------------------- 
+
 * User-specific configuration
 * IMPORTANT NOTES:
 *  Please ensure you do not interchange your username and password.
