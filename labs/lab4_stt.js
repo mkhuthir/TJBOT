@@ -12,20 +12,29 @@ speaker device ID.
 
 */
 
-var TJBot = require("tjbot");
+var TJBot = require('tjbot');
+var config = require('./config');
 
-var tj = new TJBot(
-  ["microphone"],
-  {
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = ['led', 'microphone'];
+
+// set up TJBot's configuration
+var tjConfig = {
+    log: {
+        level: 'verbose'
+    }
+    
     listen: {
       language: "en-US"
     }
-  },
-  {
-    speech_to_text: {
+};
 
-    }
-  });
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
+
 
 tj.listen(function(text) {
   console.log(text);
