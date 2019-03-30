@@ -7,17 +7,24 @@ Watson Language Translator service.
 
 */
 
-var TJBot = require("tjbot");
+var TJBot = require('tjbot');
+var config = require('./config');
 
-var tj = new TJBot(
-  [],
-  {},
-  {
-   language_translator: {    
-    apikey: ""
-   },
-  }
-);
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = [];
+
+// set up TJBot's configuration
+var tjConfig = {
+    log: {
+        level: 'verbose'
+    }
+};
+
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
 
 var text = "bonjour";
 
