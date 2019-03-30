@@ -26,10 +26,6 @@ var tjConfig = {
     log: {
         level: 'verbose'
     }
-    
-    listen: {
-      language: "en-US"
-    }
 };
 
 // instantiate our TJBot!
