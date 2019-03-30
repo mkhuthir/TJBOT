@@ -21,7 +21,7 @@ tj.raiseArm();
 
 // I have added the following code to ensure that servo is moved before exiting the script.
 // Without this code the script will exit before servo is moved.
-var answer = question('Is TJBot\'s arm in the raised position? Y/N > ');
+var answer = rl.question('Is TJBot\'s arm in the raised position? Y/N > ');
     if (answer.toLowerCase() != 'y') {
         throw new Error('please check servo wiring');
     }

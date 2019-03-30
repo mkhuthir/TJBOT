@@ -20,7 +20,7 @@ tj.wave();
 
 // I have added the following code to ensure that servo is moved before exiting the script.
 // Without this code the script will exit before servo is moved.
-var answer = question('Did TJBot\'s arm waved? Y/N > ');
+var answer = rl.question('Did TJBot\'s arm waved? Y/N > ');
     if (answer.toLowerCase() != 'y') {
         throw new Error('please check servo wiring');
     }
