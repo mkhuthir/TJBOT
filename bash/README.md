@@ -13,3 +13,8 @@ If the output lists the curl version with SSL support, you are all set otherwise
 ```bash
 sudo apt install curl
 ```
+To run a script, simply type **./** followed by the name of script file from within this folder:
+
+```bash
+./stt.sh
+```
