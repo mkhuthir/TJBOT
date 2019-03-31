@@ -11,5 +11,4 @@ else
       --data-binary @./json/tone.json \
       "https://gateway-lon.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21"
 
-
 fi
