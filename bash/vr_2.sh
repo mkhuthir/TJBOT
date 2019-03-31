@@ -1,4 +1,6 @@
+#!/bin/sh
 
+#
 curl -u "apikey:{apikey}" /
     -F "classifier_ids=food" /
     "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify/
