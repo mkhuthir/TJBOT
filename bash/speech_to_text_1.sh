@@ -7,8 +7,8 @@
 if test "$#" -ne 1; then
     echo "Usage: $0 api-key"
 else
-	echo " Calling API Using ---> \"apikey\":\"$1\""
-	curl -X POST -u "\"apikey\":\"$1\"" \
+	echo " Calling Watson Service API Using -> $1"
+	curl -X POST -u $1 \
 		--header "Content-Type: audio/flac" \
 		--data-binary @speech/audio-file.flac \
 		"https://gateway-lon.watsonplatform.net/speech-to-text/api/v1/recognize"
