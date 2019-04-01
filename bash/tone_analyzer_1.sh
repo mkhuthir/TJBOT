@@ -3,6 +3,7 @@
 # Analyze the contents tone of the file tone.json
 # Using the general-purpose endpoint via the POST request method
 # The file includes a single paragraph of plain text that is written by one person.
+# Issue the following command to analyze the tone of the overall content and of each individual sentence.
 
 if test "$#" -ne 1; then
     echo "Usage: ./"+$0+"\"yourkey\""
