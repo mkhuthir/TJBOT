@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Synthesize text in Spanish
+# Issue the following command to analyze the tone of the overall content only by setting the sentences parameter to false.
 
 if test "$#" -ne 1; then
     echo "Usage: ./"+$0+"\"yourkey\""
