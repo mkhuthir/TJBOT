@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Script will convert speech of the selected file into text
+# Transcribe audio with no options
+# The example uses the Content-Type header to indicate the type of the audio, audio/flac.
 
 if test "$#" -ne 1; then
     echo "Usage: ./stt.sh \"apikey\":\"xxxxxxx\""
