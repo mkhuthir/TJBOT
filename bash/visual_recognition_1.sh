@@ -1,4 +1,6 @@
+#! /bin/sh
 
+# Classify an image
 
 curl -u "apikey:"+$1 /
   "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify/
