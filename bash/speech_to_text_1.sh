@@ -5,7 +5,7 @@
 # The example uses the default language model, en-US_BroadbandModel, for transcription.
 
 if test "$#" -ne 1; then
-    echo "Usage: ./stt.sh \"apikey\":\"xxxxxxx\""
+    echo "Usage: ./$0 \"apikey\":\"xxxxxxx\""
 else
 	curl -X POST -u $1 \
 		--header "Content-Type: audio/flac" \
