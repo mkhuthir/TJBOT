@@ -1,3 +1,4 @@
+#!/bin/sh
 
 curl -u "apikey:{apikey}" /
     -F "classifier_ids=food" /
