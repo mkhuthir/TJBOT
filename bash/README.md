@@ -1,4 +1,4 @@
-## Bash Scripts to test Watson Services
+## Bash Scripts to test Watson AI Services
 
 This folder contains bash scripts that are using **curl** to call Watson APIs as explained on Watson getting started pages.
 
