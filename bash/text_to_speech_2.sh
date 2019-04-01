@@ -1,6 +1,8 @@
 #!/bin/sh
 
-# Script will convert speech of the selected file into text
+# Synthesize text in US English
+# Synthesize the string "hello world" and produce a WAV file that is named hello_world.ogg
+# Request uses the default US English voice, en-US_MichaelVoice
 
 if test "$#" -ne 1; then
     echo "Usage: ./stt.sh \"apikey\":\"xxxxxxx\""
