@@ -27,7 +27,7 @@ cd ~/TJBOT/bash
 Please note the following:
 
 * api-key is the only parameter that you need to pass to the script
-* script output will text in json or a file that will be written to a subfolder
+* script output will be either text in json format or a file that will be written to a subfolder
 * scripts are modified version from what is given by Watson getting started to make it easier to understand
 * service URLs are embedded inside the script, you might need to change it if you are using different service version
 * you can get more details/help/examples on Watson Portal.
