@@ -20,3 +20,8 @@ This repository was created as part of my **“Building Robots with TJBot”** s
 * **Course Page** > https://courses.cognitiveclass.ai/courses/course-v1:CognitiveClass+IT0101EN+v1/info
 
 <p align="center"> <img src="./misc/badge.png" width="25%"> </p>
+
+
+## TJBOT Library README
+
+**https://github.com/ibmtjbot/tjbotlib/blob/master/README.md**
