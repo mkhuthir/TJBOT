@@ -1,6 +1,6 @@
 ## Bash Scripts to test Watson AI Services
 
-This folder contains bash scripts that are using **curl** to call Watson APIs as explained on Watson getting started pages.
+This folder contains bash scripts that are using **curl** command to call Watson APIs as explained on Watson getting started pages.
 
 Test whether **curl** is installed. Run the following command on the command line. 
 
