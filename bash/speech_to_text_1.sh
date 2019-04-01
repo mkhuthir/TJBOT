@@ -4,6 +4,8 @@
 # The example uses the Content-Type header to indicate the type of the audio, audio/flac.
 # The example uses the default language model, en-US_BroadbandModel, for transcription.
 
+echo "Transcribe audio with no options"
+
 if test "$#" -ne 1; then
     echo "Usage: $0 api-key"
 else
