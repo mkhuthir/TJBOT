@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 curl -u "apikey:{apikey}" /
   "https://gateway.watsonplatform.net/visual-recognition/api/v3/detect_faces/
