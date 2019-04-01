@@ -4,10 +4,13 @@
 # Synthesize the string "hello world" and produce a WAV file that is named hello_world.wav
 # Request uses the default US English voice, en-US_MichaelVoice
 
+echo "Synthesize text in US English"
+
 if test "$#" -ne 1; then
-    echo "Usage: ./stt.sh \"apikey\":\"xxxxxxx\""
+    echo "Usage: $0 api-key"
 else
-	curl -X POST -u $1 \
+	echo " Calling Watson Service API Using -> \"apikey:$1\""
+	curl -X POST -u "apikey:$1" \
 		--header "Content-Type: application/json" \
 		--header "Accept: audio/wav" \
 		--data "{\"text\":\"hello world\"}" \
