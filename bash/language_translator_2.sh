@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Script will translate from English (en) to Spanish (es)
+# The following will identify the language of text
 
 if test "$#" -ne 1; then
     echo "Usage: ./stt.sh \"apikey\":\"xxxxxxx\""
