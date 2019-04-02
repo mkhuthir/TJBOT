@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Script will translate from English (en) to Spanish (es)
+# The following will translate two phrases, "Hello, world!" and "How are you?" from English to Spanish.
 
 if test "$#" -ne 1; then
     echo "Usage: ./stt.sh \"apikey\":\"xxxxxxx\""
