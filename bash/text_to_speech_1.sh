@@ -14,6 +14,6 @@ else
 		--header "Content-Type: application/json" \
 		--header "Accept: audio/wav" \
 		--data "{\"text\":\"hello world\"}" \
-		--output hello_world.wav \
+		--output ./speech/hello_world.wav \
 		"https://gateway-lon.watsonplatform.net/text-to-speech/api/v1/synthesize"
 fi

@@ -13,8 +13,9 @@ if test "$#" -ne 1; then
 else
 	echo " Calling Watson Service API Using -> \"apikey:$1\""
 	curl -X GET -u "apikey:$1" \
-      --output hola_mundo.wav \
-      "https://gateway-lon.watsonplatform.net/text-to-speech/api/v1/synthesize\
+      --output ./speech/hola_mundo.wav \
+      "https://gateway-lon.watsonplatform.net/text-to-speech/api\
+      /v1/synthesize\
       ?accept=audio%2Fwav&text=hola%20mundo\
       &voice=es-ES_EnriqueVoice"
 fi

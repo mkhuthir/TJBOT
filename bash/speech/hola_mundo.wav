@@ -1,0 +1,5 @@
+{
+    "error": "Bad request. (HAP)",
+    "code": 400,
+    "code_description": "Bad request"
+}
