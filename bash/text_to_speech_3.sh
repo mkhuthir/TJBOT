@@ -16,6 +16,7 @@ else
       --output ./speech/hola_mundo.wav \
       "https://gateway-lon.watsonplatform.net/text-to-speech/api\
       /v1/synthesize\
-      ?accept=audio%2Fwav&text=hola%20mundo\
+      ?accept=audio%2Fwav\
+      &text=hola%20mundo\
       &voice=es-ES_EnriqueVoice"
 fi
