@@ -11,7 +11,6 @@ Wave the arm up and down
 
 */
 
-
 const rl    = require('readline-sync');
 const TJBot = require('tjbot');
 
