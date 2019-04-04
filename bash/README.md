@@ -21,7 +21,41 @@ cd ~/TJBOT/bash
 * type **./** followed by the name of script file then space then your api-key for the related service
 
 ```bash
-./speech_to_text_1.sh 0123457c133714df1834b8638bb496e-8f4b3d9a-e931-478d-a994
+./tone_analyzer_4.sh pomy6gsgO4kmjtNa3eiuhg7haziujhyf0Ps8WxTrIom6
+```
+
+example output:
+
+```json
+{"utterances_tone":[
+
+    {"utterance_id":0,
+        "utterance_text":"Hello, I'm having a problem with your product.",
+        "tones":[{  "score":0.686361,
+                    "tone_id":"polite",
+                    "tone_name":"Polite"}]},
+
+    {"utterance_id":1,
+        "utterance_text":"OK, let me know what's going on, please.",
+        "tones":[{  "score":0.92724,
+                    "tone_id":"polite",
+                    "tone_name":"Polite"}]},
+
+    {"utterance_id":2,"utterance_text":"Well, nothing is working :(",
+        "tones":[{  "score":0.997795,
+                    "tone_id":"sad",
+                    "tone_name":"Sad"}]},
+
+    {"utterance_id":3,"utterance_text":"Sorry to hear that.",
+        "tones":[{  "score":0.730982,
+                    "tone_id":"polite",
+                    "tone_name":"Polite"},
+
+                 {  "score":0.672499,
+                    "tone_id":"sympathetic",
+                    "tone_name":"Sympathetic"}]}
+    ]
+}
 ```
 
 Please note the following:
