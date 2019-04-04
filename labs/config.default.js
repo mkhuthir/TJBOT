@@ -13,8 +13,18 @@ exports.hasCamera = true;
 
 // set up TJBot's configuration
 exports.tjConfig = {
-    log: { level: 'verbose' },
-    robot: { name: 'Hamza bot' } // Changing the robot name will change the attention word
+    log: { 
+        level: 'verbose'
+    },
+
+    robot: {    
+        name:   'Hamza bot', // Changing the robot name will change the attention word
+        gender: 'male'
+    },
+  
+    speak: { 
+        language: "en-US"
+    }
 };
 
 // ---  Create the credentials object for export  ---

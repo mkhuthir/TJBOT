@@ -12,23 +12,25 @@ instruct the TJBot library to use that speaker.
 
 */
 
-var TJBot = require("tjbot");
+var TJBot = require('tjbot');
+var config = require('./config');
+
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = ["speaker"];
+
+// set up TJBot's configuration
+var tjConfig = config.tjConfig;
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
+
     
-var tj = new TJBot(  
-  ["speaker"],  
-  {
-    robot: {
-      gender: "male"
-    },
-    speak: {
-      language: "en-US"
-    }
-  },
-  {
-    text_to_speech: {
-      username: "",         
-      password: ""
-    }
+
+,
+
   });
     
 tj.speak("Hello World");
