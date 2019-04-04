@@ -82,3 +82,12 @@ exports.credentials.language_translator = {
     // service URL -- change this if the URL is different in your authentication credentials
     url: 'https://gateway-lon.watsonplatform.net/language-translator/api'
 };
+
+//  --- Watson Tone Analyzer ---
+// https://www.ibm.com/watson/services/tone-analyzer/
+exports.credentials.tone_analyzer = {
+    // IAM authentication -- fill in your API key below
+    apikey: 'FILL IN YOUR API KEY HERE',
+    // service URL -- change this if the URL is different in your authentication credentials
+    url: 'https://gateway-lon.watsonplatform.net/tone-analyzer/api'
+};
