@@ -8,8 +8,6 @@
 *  Your password is the smaller value: 12 characters
 */
 
-exports.workspaceId = ''; // replace with the workspace identifier of your conversation
-
 // Set this to false if your TJBot does not have a camera.
 exports.hasCamera = true;
 
@@ -21,19 +19,6 @@ exports.tjConfig = {
 
 // ---  Create the credentials object for export  ---
 exports.credentials = {};
-
-// --- Watson Assistant ---
-// https://www.ibm.com/watson/services/conversation/
-exports.credentials.assistant = {
-    // username/password authentication -- if your service uses this method,
-    // uncomment these two lines and comment the 'apikey' line below
-    // username: '',
-    // password: '',
-    // IAM authentication -- fill in your API key below
-    apikey: 'FILL IN YOUR API KEY HERE',
-    // service URL -- change this if the URL is different in your authentication credentials
-    url: 'url": "https://gateway-lon.watsonplatform.net/assistant/api'
-};
 
 //  --- Watson Speech to Text (STT) ---
 // https://www.ibm.com/watson/services/speech-to-text/
@@ -61,6 +46,24 @@ exports.credentials.text_to_speech = {
     url: 'https://gateway-lon.watsonplatform.net/text-to-speech/api'
 };
 
+//  --- Watson Tone Analyzer ---
+// https://www.ibm.com/watson/services/tone-analyzer/
+exports.credentials.tone_analyzer = {
+    // IAM authentication -- fill in your API key below
+    apikey: 'FILL IN YOUR API KEY HERE',
+    // service URL -- change this if the URL is different in your authentication credentials
+    url: 'https://gateway-lon.watsonplatform.net/tone-analyzer/api'
+};
+
+//  --- Watson Language Translator ---
+// https://www.ibm.com/watson/services/language-translator/
+exports.credentials.language_translator = {
+    // IAM authentication -- fill in your API key below
+    apikey: 'FILL IN YOUR API KEY HERE',
+    // service URL -- change this if the URL is different in your authentication credentials
+    url: 'https://gateway-lon.watsonplatform.net/language-translator/api'
+};
+
 //  --- Watson Visual Recognition ---
 // https://www.ibm.com/watson/services/visual-recognition/
 exports.credentials.visual_recognition = {
@@ -74,20 +77,16 @@ exports.credentials.visual_recognition = {
     url: 'https://gateway.watsonplatform.net/visual-recognition/api'
 };
 
-//  --- Watson Language Translator ---
-// https://www.ibm.com/watson/services/language-translator/
-exports.credentials.language_translator = {
+// --- Watson Assistant ---
+exports.workspaceId = ''; // replace with the workspace identifier of your conversation
+// https://www.ibm.com/watson/services/conversation/
+exports.credentials.assistant = {
+    // username/password authentication -- if your service uses this method,
+    // uncomment these two lines and comment the 'apikey' line below
+    // username: '',
+    // password: '',
     // IAM authentication -- fill in your API key below
     apikey: 'FILL IN YOUR API KEY HERE',
     // service URL -- change this if the URL is different in your authentication credentials
-    url: 'https://gateway-lon.watsonplatform.net/language-translator/api'
-};
-
-//  --- Watson Tone Analyzer ---
-// https://www.ibm.com/watson/services/tone-analyzer/
-exports.credentials.tone_analyzer = {
-    // IAM authentication -- fill in your API key below
-    apikey: 'FILL IN YOUR API KEY HERE',
-    // service URL -- change this if the URL is different in your authentication credentials
-    url: 'https://gateway-lon.watsonplatform.net/tone-analyzer/api'
+    url: 'url": "https://gateway-lon.watsonplatform.net/assistant/api'
 };
