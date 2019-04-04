@@ -13,11 +13,11 @@ var config = require('./config');
 // these are the hardware capabilities that our TJ needs for this recipe
 var hardware = [];
 
-// obtain our credentials from config.js
-var credentials = config.credentials;
-
 // set up TJBot's configuration
 var tjConfig = config.tjConfig;
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
 
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
