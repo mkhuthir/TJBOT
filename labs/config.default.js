@@ -24,7 +24,7 @@ exports.tjConfig = {
   
     speak: { 
         language: "en-US"
-    }
+    },
 
     see: {
         confidenceThreshold: {
