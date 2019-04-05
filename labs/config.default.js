@@ -14,7 +14,7 @@ exports.hasCamera = true;
 // set up TJBot's configuration
 exports.tjConfig = {
     log: { 
-        level: 'verbose'
+        level: 'verbose' // valid levels are 'error', 'warn', 'info', 'verbose', 'debug', 'silly'
     },
 
     robot: {    
@@ -22,8 +22,20 @@ exports.tjConfig = {
         gender: 'male'
     },
   
+    wave: {
+        servoPin: 7 // corresponds to BCM 7 / physical PIN 26
+    },
+
+    listen: {
+        microphoneDeviceId: "plughw:1,0", // plugged-in USB card 1, device 0; see arecord -l for a list of recording devices
+        inactivityTimeout: -1, // -1 to never timeout or break the connection. Set this to a value in seconds e.g 120 to end connection after 120 seconds of silence
+        language: 'en-US' // see TJBot.prototype.languages.listen
+    },
+
     speak: { 
-        language: "en-US"
+        language: "en-US" // see TJBot.prototype.languages.speak
+        voice: undefined, // use a specific voice; if undefined, a voice is chosen based on robot.gender and speak.language
+        // speakerDeviceId: "plughw:0,0" // plugged-in USB card 1, device 0; see aplay -l for a list of playback devices
     },
 
     see: {
