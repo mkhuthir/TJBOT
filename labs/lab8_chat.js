@@ -14,17 +14,20 @@ but all the Watson Conversation services capabilities are supported in the Watso
 
 */
 
-var TJBot = require("tjbot");
+var TJBot = require('tjbot');
+var config = require('./config');
 
-var tj = new TJBot(  
-  [],  
-  {},  
-  { 
-    conversation: {
-      username: "",      
-      password: ""    
-    }
-  });
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = [];
+
+// set up TJBot's configuration
+var tjConfig = config.tjConfig;
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
 
 var workspaceId = "";
 var text = "How do you use Watson Assistant?";

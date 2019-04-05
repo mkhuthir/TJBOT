@@ -4,23 +4,21 @@
 
 */
 
+var TJBot = require('tjbot');
+var config = require('./config');
 
-var TJBot = require("tjbot");
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = ["microphone","led"];
 
-var tj = new TJBot(
-  ["microphone","led"], 
-  {}, 
-  {
-    speech_to_text: {
-      username: "",
-      password: ""
-    },
-    tone_analyzer: {
-      username: "",
-      password: ""
-    }
-  }
-);
+// set up TJBot's configuration
+var tjConfig = config.tjConfig;
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
+
 
 function processText(text) {
   console.log(text);

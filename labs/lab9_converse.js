@@ -4,33 +4,20 @@
 
 */
 
-var TJBot = require("tjbot");
+var TJBot = require('tjbot');
+var config = require('./config');
 
-var tj = new TJBot(
-  ["microphone","speaker"],
-  {
-    robot: {
-      gender: "male"
-    },
-    speak: {
-      language: "en-US"
-    }
-  },
-  {
-    speech_to_text: {
-      username: "",
-      password: ""
-    },
-    conversation: {
-      username: "",
-      password: ""
-    },
-    text_to_speech: {
-      username: "",
-      password: ""
-    }    
-  }
-);
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = ["microphone","speaker"];
+
+// set up TJBot's configuration
+var tjConfig = config.tjConfig;
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
 
 var workspaceId = "";
 

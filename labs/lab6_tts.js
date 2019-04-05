@@ -26,12 +26,6 @@ var credentials = config.credentials;
 
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
-
-    
-
-,
-
-  });
     
 tj.speak("Hello World");
 

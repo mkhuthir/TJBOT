@@ -6,17 +6,20 @@ TJBot can be trained to understand five emotions that are present in text: anger
 
 */
 
-var TJBot = require("tjbot");
+var TJBot = require('tjbot');
+var config = require('./config');
 
-var tj = new TJBot(  
-  [],  
-  {},  
-  { 
-    tone_analyzer: {
-      username: "",      
-      password: ""    
-    }
-  });
+// these are the hardware capabilities that our TJ needs for this recipe
+var hardware = [];
+
+// set up TJBot's configuration
+var tjConfig = config.tjConfig;
+
+// obtain our credentials from config.js
+var credentials = config.credentials;
+
+// instantiate our TJBot!
+var tj = new TJBot(hardware, tjConfig, credentials);
 
 var text = "This is an amazing demo full of examples.";
 
