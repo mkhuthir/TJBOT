@@ -19,7 +19,7 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
 
-var workspaceId = "";
+var workspaceId = config.workspaceId;
 
 function processText(text) {
   console.log(text);

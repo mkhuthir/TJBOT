@@ -29,7 +29,7 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
 
-var workspaceId = "";
+var workspaceId = config.workspaceId;
 var text = "How do you use Watson Assistant?";
 
 tj.converse(workspaceId, text, function(response) {  
