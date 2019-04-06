@@ -7,8 +7,8 @@ Watson Language Translator service.
 
 */
 
-var TJBot = require('tjbot');
-var config = require('./config');
+var TJBot   = require('tjbot');
+var config  = require('./config');
 
 // these are the hardware capabilities that our TJ needs for this recipe
 var hardware = [];

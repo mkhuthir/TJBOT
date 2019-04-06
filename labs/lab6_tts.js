@@ -12,8 +12,8 @@ instruct the TJBot library to use that speaker.
 
 */
 
-var TJBot = require('tjbot');
-var config = require('./config');
+var TJBot   = require('tjbot');
+var config  = require('./config');
 
 // these are the hardware capabilities that our TJ needs for this recipe
 var hardware = ["speaker"];
