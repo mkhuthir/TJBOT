@@ -23,12 +23,17 @@ var tj = new TJBot(hardware, tjConfig, credentials);
 
 var text = "This is an amazing demo full of examples.";
 
-tj.analyzeTone(text).then(function(response) {
-  var emotions = response.document_tone.tone_categories[0].tones;
-  var top = emotions[Object.keys(emotions).reduce(function(a, b) {
-    return emotions[a].score > emotions[b].score ? a : b
-  })];
-  
-  console.log("Top tone: "+top.tone_id);
-});
+tj.analyzeTone(text).then(function(response) 
+    {
+      var emotions = response.document_tone.tone_categories[0].tones;
+      var top = emotions[Object.keys(emotions).reduce(function(a, b) 
+            {
+              return emotions[a].score > emotions[b].score ? a : b
+            }
+          )
+        ];
+    
+      console.log("Top tone: "+top.tone_id);
+    }
+  );
 
