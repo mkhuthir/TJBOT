@@ -24,7 +24,7 @@ var tjConfig = {
 	 	},
     	speak: {
     	//speakerDeviceId: "bluealsa:HCI=hci0,DEV=11:2C:33:A4:1E:5B,PROFILE=a2dp" //  add your bluetooth device mac address
-		speakerDeviceId: "plughw:0,0" // plugged-in USB card 1, device 0; see aplay -l for a list of playback devices
+		speakerDeviceId: "default" // plugged-in USB card 1, device 0; see aplay -l for a list of playback devices
   		}
     };
 
