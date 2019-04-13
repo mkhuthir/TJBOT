@@ -16,7 +16,7 @@ var TJBot   = require('tjbot');
 var config  = require('./config');
 
 // these are the hardware capabilities that our TJ needs for this recipe
-var hardware = ['led', 'microphone'];
+var hardware = ['microphone'];
 
 // set up TJBot's configuration
 var tjConfig = config.tjConfig;
@@ -27,10 +27,12 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
 
-tj.listen(function(text) {
-  console.log(text);
-  tj.stopListening();
-});
+tj.listen(
+    function(text) {
+      console.log(text);
+      tj.stopListening();
+    }
+);
 
 /*
 Other Mic control commands:
