@@ -25,7 +25,7 @@ var tj = new TJBot(hardware, tjConfig, credentials);
     
 tj.see().then(function(objects) 
     {
-      console.log(objects);
+      //console.log(objects);
       var text = "Hamza Bot sees " + objects.map(item => item["class"]).join(", ");
       console.log(text);
       //tj.speak(text);
