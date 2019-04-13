@@ -25,7 +25,8 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
 
-tj.see().then(function(objects) {
-                            console.log(objects.map(i => i.class).join(", "));
-                          }
+tj.see().then(function(objects)
+  {
+    console.log(objects.map(i => i.class).join(", "));
+  }
 );
