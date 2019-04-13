@@ -25,13 +25,16 @@ function processText(text) {
   console.log(text);
   tj.stopListening();
 
-  tj.converse(workspaceId, text, function(response) {
-    console.log(response);
-
-    tj.speak(response.object.output.text.join(" ")).then(function(){
-      tj.listen(processText);
-    });
-  });
+  tj.converse(workspaceId, text, function(response) 
+        {
+          console.log(response);
+          tj.speak(response.object.output.text.join(" ")).then(function()
+              {
+                tj.listen(processText);
+              }
+            );
+        }
+      );
 }
 
 tj.listen(processText);

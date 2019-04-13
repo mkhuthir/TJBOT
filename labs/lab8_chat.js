@@ -32,7 +32,9 @@ var tj = new TJBot(hardware, tjConfig, credentials);
 var workspaceId = config.workspaceId;
 var text = "How do you use Watson Assistant?";
 
-tj.converse(workspaceId, text, function(response) {  
-  console.log(response.object.output.text.join(" "));  
-});
+tj.converse(workspaceId, text, function(response) 
+    {  
+      console.log(response.object.output.text.join(" "));  
+    }
+  );
 

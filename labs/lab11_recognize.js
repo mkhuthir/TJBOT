@@ -19,11 +19,11 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
     
-tj.see(function(objects) {
-  console.log(objects);
-  
-  var text = "Hamza Bot sees " + objects.map(item => item["class"]).join(", ");
-  console.log(text);
-  
-  tj.speak(text);
-});
+tj.see(function(objects) 
+    {
+      console.log(objects);
+      var text = "Hamza Bot sees " + objects.map(item => item["class"]).join(", ");
+      console.log(text);
+      tj.speak(text);
+    }
+  );
