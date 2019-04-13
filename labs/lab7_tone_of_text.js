@@ -2,7 +2,8 @@
 
 /* Lab 7: Make the robot recognize tone
 
-TJBot can be trained to understand five emotions that are present in text: anger, disgust, fear, joy, and sadness.
+TJBot can be trained to understand five emotions that are present in 
+text: anger, disgust, fear, joy, and sadness.
 
 */
 

@@ -1,6 +1,10 @@
 #!/usr/bin/env node    
 
-/* Lab 11:
+/* Lab 11: Recognize objects and say them out loud
+
+In this lab, you'll use the Watson Visual Recognition service 
+to make the robot recognize objects and then use the Watson Text
+to Speech service so that the robot speaks out loud what it sees.
 
 */
 

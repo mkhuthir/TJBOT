@@ -1,6 +1,10 @@
 #!/usr/bin/env node    
 
-/* Lab 9:
+/* Lab 9: Converse with TJBot
+
+In this lab, we'll use the listen, converse, and speak methods to train
+TJBot to listen to utterances, understand the natural language intents 
+and entities, and respond by speaking out the response.
 
 */
 

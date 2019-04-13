@@ -1,6 +1,10 @@
 #!/usr/bin/env node    
 
-/* Lab 10 :
+/* Lab 10 : Detect tone in audio and react with a colored light
+
+In this lab, you'll use the listen and analyze tone methods to train TJBot 
+to listen to utterances and analyze the emotion and then shine an LED 
+light based on which emotion is most prevalent.
 
 */
 
