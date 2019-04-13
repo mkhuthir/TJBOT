@@ -36,9 +36,11 @@ const TJBot = require('tjbot');
 var tj = new TJBot(['speaker'], tjConfig, {});
 
 var sound = '/usr/share/sounds/alsa/Front_Center.wav';
-tj.play(sound).then(function() {
-    var answer = rl.question('Did you hear the words "Front Center"? Y/N > ');
-    if (answer.toLowerCase() != 'y') {
-        throw new Error('expected audio to play, please check that you speaker is plugged in, turned on, and set as the current audio output device.');
-    }
-});
+tj.play(sound).then(
+					function() {
+    					var answer = rl.question('Did you hear the words "Front Center"? Y/N > ');
+    					if (answer.toLowerCase() != 'y') {
+        					throw new Error('expected audio to play, please check that you speaker is plugged in, turned on, and set as the current audio output device.');
+    					}
+					}
+);
