@@ -21,16 +21,14 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
 
-var text = "Team, I know that times are tough! Product sales have been disappointing for the past three quarters. We have a competitive product, but we need to do a better job of selling it!";
+var text = "This is an amazing demo full of examples.";
 
-/* Use the following for test
 tj.analyzeTone(text).then(function(response) 
     {
       console.log(response);
     }
   );
-*/
-
+/*
 tj.analyzeTone(text).then(function(response) 
     {
       var emotions = response.document_tone.tone_categories[0].tones;
@@ -44,4 +42,4 @@ tj.analyzeTone(text).then(function(response)
       console.log("Top tone: "+top.tone_id);
     }
   );
-
+*/
