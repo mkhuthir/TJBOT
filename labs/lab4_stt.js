@@ -27,7 +27,7 @@ var credentials = config.credentials;
 // instantiate our TJBot!
 var tj = new TJBot(hardware, tjConfig, credentials);
 
-tj.listen().then(function(text) {
+tj.listen(function(text) {
       console.log(text);
       tj.stopListening();
     }
