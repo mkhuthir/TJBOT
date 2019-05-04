@@ -16,7 +16,7 @@ sudo apt install curl
 To run a script, 
 * change to the folder where you have the scripts:
 ```bash
-cd ~/TJBOT/bash
+cd ~/TJBOT/bash_tests
 ```
 * type **./** followed by the name of script file then space then your api-key for the related service
 
